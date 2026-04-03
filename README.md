@@ -174,25 +174,7 @@ Labels:     Barlow Condensed (uppercase, tracking)
 
 ---
 
-## 📊 Data Models
 
-### Car Object
-```javascript
-{
-  id: "car_1234567890",
-  brand: "Lamborghini",
-  model: "Revuelto",
-  year: 2024,
-  price: "₹3.5 Cr",
-  color: "Giallo Aries",
-  mileage: "0 km",
-  transmission: "Automatic",
-  engine: "V12, 1001 BHP",
-  image: "https://...",
-  description: "Limited edition hybrid supercar...",
-  featured: true,
-  addedDate: "2024-03-20"
-}
 ```
 
 ### User Object
@@ -207,18 +189,7 @@ Labels:     Barlow Condensed (uppercase, tracking)
 }
 ```
 
-### Test Drive Object
-```javascript
-{
-  id: "td_1234567890",
-  userId: "u_...",
-  carId: "car_...",
-  location: "Rajkot Showroom",
-  date: "25/03/2024",
-  time: "3:00 PM",
-  createdAt: "2024-03-20"
-}
-```
+
 
 ---
 
@@ -281,39 +252,6 @@ LD.addSellEnquiry(enquiryObj)   // Submit car for sale
 
 ## 🛠️ Development Guide
 
-### Adding a New Car
-
-```javascript
-// In browser console or form submission
-const newCar = {
-  id: "car_" + Date.now(),
-  brand: "Ferrari",
-  model: "SF90 Stradale",
-  year: 2024,
-  price: "₹4.2 Cr",
-  color: "Rosso Corsa",
-  mileage: "500 km",
-  transmission: "Automatic",
-  engine: "V12, 986 BHP",
-  image: "https://...",
-  description: "Hybrid supercar with electric range",
-  featured: true
-};
-
-LD.addCar(newCar);
-location.reload();  // Refresh to see updates
-```
-
-### Customizing Colors
-
-Edit `/css/style.css` color variables:
-```css
-:root {
-  --gold: #C9A84C;           /* Change primary accent */
-  --black: #060606;          /* Change primary background */
-  --white: #FFFFFF;          /* Change text color */
-}
-```
 
 ### Creating New Pages
 
@@ -357,28 +295,7 @@ Edit `/css/style.css` color variables:
 
 ---
 
-## 🚀 Future Roadmap
 
-### Phase 3.0 (Planned)
-- [ ] Backend API (Node.js/Express)
-- [ ] Real-time chat with dealers
-- [ ] Payment gateway integration (Razorpay)
-- [ ] Email notifications
-- [ ] Admin dashboard
-- [ ] Car comparison tool
-- [ ] AR car visualization
-- [ ] User reviews & ratings
-
-### Phase 3.5 (Proposed)
-- [ ] Mobile app (React Native)
-- [ ] WhatsApp integration
-- [ ] Video tours (YouTube embed)
-- [ ] Insurance calculator
-- [ ] Trade-in valuation
-- [ ] Financing options
-- [ ] Service reminders
-
----
 
 ## 💻 Tech Stack
 
@@ -386,7 +303,7 @@ Edit `/css/style.css` color variables:
 Frontend:
 ├── HTML5          (Semantic markup)
 ├── CSS3           (Flexbox, Grid, Animations)
-├── Vanilla JS     (No frameworks)
+├── Vanilla JS     (j query)
 ├── Bootstrap 5.3  (Optional utilities)
 └── Font Awesome   (Icons)
 
@@ -395,142 +312,13 @@ Data:
 ├── sessionStorage (User session)
 └── JSON           (Data serialization)
 
-Deployment:
-├── GitHub Pages   (Static hosting)
-├── Vercel         (Alternative)
-└── Netlify        (Alternative)
-```
+
 
 ---
 
-## 📚 Learning Resources
 
-### Inspired By
-- [Big Boy Toyz](https://www.bigboytoys.in/) — Luxury dealership UI
-- Apple Design System — Minimalist elegance
-- [Porsche Official Site](https://www.porsche.com/) — Premium luxury branding
-
-### Related Technologies
-- Web Components & Custom Elements
-- Service Workers & Offline Storage
-- Web Workers for async operations
-- IndexedDB for larger datasets
-
----
-
-## 📄 License
-
-This project is licensed under the **MIT License** — see `LICENSE` file for details.
 
 You are free to use, modify, and distribute this project for personal and commercial purposes.
 
 ---
 
-## 🤝 Contributing
-
-Contributions are welcome! Here's how:
-
-1. **Fork** the repository
-2. **Create** a feature branch (`git checkout -b feature/amazing-feature`)
-3. **Commit** your changes (`git commit -m 'Add amazing feature'`)
-4. **Push** to the branch (`git push origin feature/amazing-feature`)
-5. **Open** a Pull Request
-
-### Contribution Guidelines
-- Follow existing code style
-- Keep components modular
-- Test across browsers
-- Update README if adding features
-- No breaking changes to data models
-
----
-
-## 📞 Support & Contact
-
-### Get Help
-- **Issues?** [Create a GitHub Issue](https://github.com/yourusername/luxdrive-motors/issues)
-- **Questions?** Check the [Discussions](https://github.com/yourusername/luxdrive-motors/discussions)
-- **Email:** support@luxdrive-motors.com
-
-### Social & Community
-- 🌐 Website: [luxdrive-motors.com](https://luxdrive-motors.com)
-- 📧 Email: info@luxdrive-motors.com
-- 📱 WhatsApp: +91 9876543210
-- 🐙 GitHub: [@yourusername](https://github.com/yourusername)
-- 💼 LinkedIn: [LuxDrive Motors](https://linkedin.com)
-
----
-
-## 📊 Statistics
-
-```
-Total Lines of Code:     ~1,500+
-├─ HTML:                 ~500 lines
-├─ CSS:                  ~779 lines
-└─ JavaScript:           ~630+ lines
-
-Components:              15+ reusable elements
-Pages:                   9 full pages
-Data Models:             5+ primary objects
-Browser Support:         4 major browsers
-Accessibility Level:     WCAG AA compliant
-```
-
----
-
-## 🎯 Project Goals
-
-✅ **Completed**
-- Full-featured car marketplace UI
-- Authentication system with session management
-- Persistent data storage with localStorage
-- Responsive mobile-first design
-- Luxury brand aesthetic with gold/black theme
-- Test drive booking system
-- Car selling integration
-- Multi-page navigation
-
-🔄 **In Progress**
-- Backend API integration
-- Real payment processing
-- Enhanced search & filtering
-
-📅 **Upcoming**
-- Mobile app (React Native)
-- AR visualization
-- Real-time notifications
-
----
-
-## 🏆 Awards & Recognition
-
-*Coming Soon* — This project demonstrates professional-grade UI/UX design and full-stack thinking.
-
----
-
-<div align="center">
-
-### Built with ❤️ by Maharshi
-
-⭐ If you found this useful, please consider giving it a star!
-
-[GitHub](https://github.com/yourusername) • [Portfolio](https://yourportfolio.com) • [LinkedIn](https://linkedin.com/in/yourprofile)
-
-**Made with** ![HTML5](https://img.shields.io/badge/HTML5-E34C26?style=flat&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
-
-</div>
-
----
-
-## 📄 Quick Links
-
-- [Features Overview](#-features)
-- [Getting Started](#-getting-started)
-- [Project Structure](#-project-structure)
-- [Tech Stack](#-tech-stack)
-- [Contributing](#-contributing)
-- [Support](#-support--contact)
-
----
-
-**Last Updated:** March 2024 | **Version:** 2.0 | **Status:** Production Ready ✅
