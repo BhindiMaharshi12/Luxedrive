@@ -177,17 +177,6 @@ Labels:     Barlow Condensed (uppercase, tracking)
 
 ```
 
-### User Object
-```javascript
-{
-  id: "u_1234567890",
-  name: "John Doe",
-  email: "john@example.com",
-  phone: "+91 9876543210",
-  password: "hashed_password",
-  joined: "20/03/2024"
-}
-```
 
 
 
